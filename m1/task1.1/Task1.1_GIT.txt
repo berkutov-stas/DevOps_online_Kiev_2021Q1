@@ -1,0 +1,20 @@
+$ git reflog
+bb84f8f (HEAD -> main, origin/main, origin/dev, origin/HEAD, dev) HEAD@{0}: merg
+e dev: Fast-forward
+28b7c56 HEAD@{1}: checkout: moving from dev to main
+bb84f8f (HEAD -> main, origin/main, origin/dev, origin/HEAD, dev) HEAD@{2}: merg
+e styles: Merge made by the 'recursive' strategy.
+03d3579 HEAD@{3}: commit (merge): Merge branch 'images' into dev
+47be977 HEAD@{4}: commit: cc
+f81bffe HEAD@{5}: checkout: moving from styles to dev
+407ea68 (origin/styles, styles) HEAD@{6}: commit: css patch added
+f81bffe HEAD@{7}: checkout: moving from dev to styles
+f81bffe HEAD@{8}: checkout: moving from images to dev
+18fb6ac (origin/images, images) HEAD@{9}: commit: added photo patch
+efa9f02 HEAD@{10}: commit: folded foto created
+f81bffe HEAD@{11}: checkout: moving from dev to images
+f81bffe HEAD@{12}: commit: file index created in branch dev
+28b7c56 HEAD@{13}: checkout: moving from main to dev
+28b7c56 HEAD@{14}: commit: readme.txt created
+47cc11b HEAD@{15}: clone: from https://github.com/berkutov-stas/devops_online_ki
+ev_2021q1
