@@ -28,6 +28,8 @@ In addition, I adjusted the audio and was able to listen to the video from YouTu
 
 The work with vagrant began with minor difficulties. I had an old version of Powershell, so I had to update Management Framework. Then I installed Vagrant successfully and checked its path in system variables. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/Vagrant%20Path.jpg">
 
-I created a test wagrant box using the **MkDir** command. Then I initialized the box using the **init** command. And then he launched **vagrant up**. After that, I was able to log into the virtual machine through the **Putty** using the SSH protocol.
+I created a test wagrant box using the **MkDir** command. Then I initialized the box using the **init** command. And then he launched **vagrant up**. After that, I was able to log into the virtual machine through the **Putty** using the SSH protocol. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/Vagrant_Putty.jpg">
 
-Then I created my own wagrant box.
+Then I created my own Vagrant box. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/Vagrant%20Box%20Create1.png">. 
+
+Summing up task 2.1, I can say that I have successfully mastered working with virtual machines, made significant progress in my knowledge of Ubuntu, studied working with Vagrant, and also improved my knowledge in Markdown Language.
