@@ -14,18 +14,20 @@ Then I cloned the virtual machine and got VM2. <img src="https://github.com/berk
 
 After that, I created a group called Ubuntu for my virtual machines. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/VM%20Group.png">
 
-After that, I experimented with creating a snapshot tree.
+After that, I experimented with creating a snapshot tree. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/snaps.png">
 
-Then I did an export of the virtual machine. After that, I tried to do an import, but I couldn't manage it for a while. Later it turned out that the reason was insufficient disk space. After cleaning the disk, the import was successful.
+Then I did an export of the virtual machine. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/VM%20Export.png">
 
-Then I got into the configuration of the virtual machine. I was able to set up usb and was able to successfully interact with the flash drive. In addition, I adjusted the audio and was able to listen to the video from YouTube, which I launched through the Ubuntu GUI.
+After that, I tried to do an import, but I couldn't manage it for a while. Later it turned out that the reason was insufficient disk space. After cleaning the disk, the import was successful. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/VM%20Import.png">
 
-After that, I experimented with various network models. I was able to set up communication between the Host and two virtual machines in different modes.
+Then I got into the configuration of the virtual machine. I was able to set up USB and was able to successfully interact with my flash drive. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/USB%20VM%20working.png">
 
-I also worked with the command line of the virtual machine and used commands to create a virtual machine, start, clone, and so on.
+In addition, I adjusted the audio and was able to listen to the video from YouTube, which I launched through the Ubuntu GUI. After that, I experimented with various network models. I was able to set up communication between the Host and two virtual machines in different modes. I also worked with the command line of the virtual machine and used commands to create a virtual machine, start, clone, and so on.
 
-The work with vagrant began with difficulties. I ended up with an old version of Powershell, so I had to update Management Framework.
+**PART 3. WORK WITH VAGRANT**
 
-I created a test wagrant box using the McDir command. Then I initialized the box using the init command. And then he launched vagrant unitary enterprise. After that, I was able to log into the virtual machine through the Paths using the US protocol.
+The work with vagrant began with minor difficulties. I had an old version of Powershell, so I had to update Management Framework. Then I installed Vagrant successfully and checked its path in system variables. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/Vagrant%20Path.jpg">
+
+I created a test wagrant box using the **MkDir** command. Then I initialized the box using the **init** command. And then he launched **vagrant up**. After that, I was able to log into the virtual machine through the **Putty** using the SSH protocol.
 
 Then I created my own wagrant box.
