@@ -11,6 +11,7 @@ I installed Virtual Box on my computer with Windows 7 installed. After that I do
 experimented with a virtual machine - shutdown, reboot, mouse and keyboard capture, etc.
 
 Then I cloned the virtual machine and got VM2. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/VM%20Clone.png">
+
 After that, I created a group called Ubuntu for my virtual machines. <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.2/VM%20Group.png">
 
 After that, I experimented with creating a snapshot tree.
