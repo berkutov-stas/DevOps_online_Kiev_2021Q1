@@ -1,11 +1,15 @@
 I built a local network of 4 PCs and a hub, assigned a unique IP to each PC and indicated a common subnet mask.
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.1/2_nets_with_gateway.png">
 
-Checked how the network works using the ping command. Packets pass - the network is working. When sending packets, the hub sent packets to each PC, the recipient received packets, the rest of the PCs did not receive packets.
+Checked how the network works using the ping command. Packets pass - the network is working. 
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.1/ping_4%20PC_net.png">
+When sending packets, the hub sent packets to each PC, the recipient received packets, the rest of the PCs did not receive packets.
 
 After removing the IP addresses, the network naturally stopped working, the packets stopped going.
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.1/ip_deleted.png">
 
 In the next task, I assembled a network of six PCs, a server, and two hubs. The hubs were connected using Copper Cross-over cables.
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.1/net_with_server.png">
 
 Then I built a local one on 4 PCs and a switch. Unlike a hub-based network, the switch sent packets directly to the recipient. This option guarantees a decrease in network congestion, and also increases security, since the data will not get to those to whom it was not intended.
 
