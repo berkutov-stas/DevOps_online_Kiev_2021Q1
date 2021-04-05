@@ -1,5 +1,6 @@
 **1. Network for 4 PCs, connection using a hub**
 I built a local network of 4 PCs and a hub, assigned a unique IP to each PC and indicated a common subnet mask.
+
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.1/2_nets_with_gateway.png">
 
 Checked how the network works using the ping command. Packets pass - the network is working. 
