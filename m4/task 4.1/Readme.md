@@ -18,5 +18,9 @@ Then I built a local one on 4 PCs and a switch. Unlike a hub-based network, the 
 
 **4. Network for 8 PCs, connection using two switches**
 The next network was built from 8 PCs and two switches. 4 PCs were connected to each of the switches, and the switches were connected to each other using a Copper Cross-over cable.
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.1/8_pc_2_switches.png">
 
-Then the network was split into two subnets. The first subnet had addresses like 192.168.0.x, the second - 192.168.1.x. To enable networks to exchange data, I configured routing on the router, using it as a gateway. Thus, the router gave me the ability to connect two subnets. In the previous version of the network with the connection of two switches and without a router, this could not be done.
+**5. 2 subnets for 4 + 4 PCs, connection using 2 switches and a router**
+Then the network was split into two subnets. The first subnet had addresses like 192.168.0.x, the second - 192.168.1.x. To enable networks to exchange data, I configured routing on the router, using it as a gateway. Thus, the router gave me the ability to connect two subnets. Subnets were tested using the ping command from a PC with the address 192.168.0.1 on a PC with the address 192.168.1.1
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.1/2_nets_with_gateway.png">
+In the previous version of the network with the connection of two switches and without a router, this could not be done. 
