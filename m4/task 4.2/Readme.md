@@ -19,40 +19,40 @@ I also used a router to do the routing. I managed to achieve the ability to send
 
 First, I set up a VLAN for each of the 8 subnets. 
 
-*enable
-conf t
-10 name WG1*
+*enable  
+conf t  
+vlan 10 name WG1*
 
 The same for the rest of the VLANs.
 
 I assigned a network interface to each of the VLANs using the commands:
 
-*interface fastethernet 0/1
-switchport mode access
+*interface fastethernet 0/1  
+switchport mode access  
 switchport access vlan 10*
 
 I repeated the same for the remaining 7 VLANs.
 
 I gave VLAN access to computers from the workgroup.
 
-*interface fastEthernet 0/2-5
-switchport mode access
+*interface fastEthernet 0/2-5  
+switchport mode access  
 switchport access vlan 10*
 
 the same for other VLANs.
 
 After that, I configured trunk port on each of the switches by connecting them to the router.
 
-*interface gigabitEthernet 0/1
-switchport mode trunk
+*interface gigabitEthernet 0/1  
+switchport mode trunk  
 switchport trunk allowed vlan 10,20,30,40*
 
 The same is on the second switch fot VLANs 50, 60, 70, 80.
 
 After that, on the router, I created subinterfaces for VLANs and assigned them IP addresses, which became gateways.
 
-*interface fastEt 0/0.1
-encapsulation dot1Q 10
+*interface fastEt 0/0.1  
+encapsulation dot1Q 10  
 ip address 192.168.1.254 255.255.255.0*
 
 I did the same for the rest of the VLANs and after that I registered dynamic routing by command
@@ -72,10 +72,10 @@ On 2960 switches, I configured vlans to which I added a PC. A trunking port for 
 WLAN is also configured on the 3560 switch. WLAN interfaces are assigned IP addresses, which are gateways for subnets. Also on 3560 VLAN with a 2911 router is configured.
 
 The 2911 router has a routing table configured to communicate with each PC on each subnet.
-*ip route 192.168.1.0 255.255.255.0 192.168.10.1
-ip route 192.168.2.0 255.255.255.0 192.168.10.1
-ip route 192.168.3.0 255.255.255.0 192.168.10.1
-ip route 192.168.4.0 255.255.255.0 192.168.10.1
+*ip route 192.168.1.0 255.255.255.0 192.168.10.1   
+ip route 192.168.2.0 255.255.255.0 192.168.10.1  
+ip route 192.168.3.0 255.255.255.0 192.168.10.1  
+ip route 192.168.4.0 255.255.255.0 192.168.10.1  
 ip route 192.168.5.0 255.255.255.0 192.168.10.1*
 
 As a result, every PC sees everyone on the network.
