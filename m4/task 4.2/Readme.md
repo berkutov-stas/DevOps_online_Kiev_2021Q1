@@ -80,6 +80,6 @@ ip route 192.168.3.0 255.255.255.0 192.168.10.1
 ip route 192.168.4.0 255.255.255.0 192.168.10.1  
 ip route 192.168.5.0 255.255.255.0 192.168.10.1*
 
-As a result, every PC sees everyone on the network.  
+As a result, every PC sees everyone on the network. In this case, pings are launched from the PC 192.168.1.1  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.2/ping%201.1%20to%2010.2.png">  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.2/ping%201.1%20to%205.1.png">
