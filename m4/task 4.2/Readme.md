@@ -67,6 +67,8 @@ Thus, I was able to achieve communication between all PCs in 8 subnets.
 In this task, I needed to create a local network of 30 PCs, which are located in 5 buildings. For each building, I used switches 2960, switch 3560 provided routing. 
 To access the Internet, I used router 2911.
 
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.2/4.2.3%20task%20schema.png">
+
 On 2960 switches, I configured vlans to which I added a PC. A trunking port for communication with the 3560 is also configured.
 
 WLAN is also configured on the 3560 switch. WLAN interfaces are assigned IP addresses, which are gateways for subnets. Also on 3560 VLAN with a 2911 router is configured.
@@ -78,6 +80,6 @@ ip route 192.168.3.0 255.255.255.0 192.168.10.1
 ip route 192.168.4.0 255.255.255.0 192.168.10.1  
 ip route 192.168.5.0 255.255.255.0 192.168.10.1*
 
-As a result, every PC sees everyone on the network.
-<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.2/ping%201.1%20to%2010.2.png">
+As a result, every PC sees everyone on the network.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.2/ping%201.1%20to%2010.2.png">  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m4/task%204.2/ping%201.1%20to%205.1.png">
