@@ -100,7 +100,7 @@ cd Videos*
 **ls** with the **-a** option lists folders and files, including hidden ones
 
 **ls** with the **-l** option displays a verbose listing showing owner, group, creation date, size, and other options.
-https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/ls-l.png
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/ls-l.png">
 
 5) I created a test folder
 *mkdir test*
@@ -109,90 +109,99 @@ I created a file "test" in the test folder
 
 passed information about the folder structure to the file - **test.txt**
 *tree -o /home/stas/test/test.txt*
-https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/test-O-result.png
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/test-O-result.png">
 
-copied the created file to home directory
-cp /home/stas/test/test.txt / home / stas / test / txt
+I copied the created file to home directory
+*cp /home/stas/test/test.txt /home/stas/test.txt*
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/copy%20file.png">
 
-deleted file and directory
-rm -R / home / stas / test
+I deleted file and directory
+*rm -R /home/stas/test*
 
-deleted the file copied to home directory
+I deleted the file copied to home directory
+*rm /home/stas/test.txt*
 
-rm /home/stas/test.txt
+6) I created a test folder
+*mkdir test*
 
 copying .bash_history file with name change
-cp /home/stas/.bash_history / home / stas / test / labwork2
+*cp /home/stas/.bash_history /home/stas/test/labwork2*
 
-Symbolic links can be compared to shortcuts. They contain the address of the desired file. When you open a link, the desired file or folder opens. When you delete a file / folder, the link will be saved, but it will lead to nowhere.
-
-A hard link is another name for a file. Creating a hard link creates an additional pointer to the existing file, but not a copy of it.
-
+**Symbolic links** can be compared to shortcuts. They contain the address of the desired file. When you open a link, the desired file or folder opens. When you delete a file, the link will be saved, but it will lead to nowhere. A **hard link** is another name for a file. Creating a hard link creates an additional pointer to the existing file, but not a copy of it.
 
 Creating a symbolic link
-ln -s labwork2 softlink
+*ln -s labwork2 softlink*
 
 Create a hard link
-ln labwork2 hardlink
+*ln labwork2 hardlink*
 
 Renaming hard and symbolic links
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/rename%20hard%20and%20soft%20links.png">
 
-After deleting the labwork2 file, the symlink stopped working as it was essentially a shortcut. The hard link still works because it continues to point to the correct location on the disk where the data is stored.
+After deleting **labwork2** file, the symlink stopped working as it was essentially a shortcut. The hard link still works because it continues to point to the correct location on the disk where the data is stored.
 
-In order to use the locate utility to find all files containing the squid and traceroute sequence, I have to install locate, squid and traceroute.
+7) In order to use the locate utility to find all files containing the squid and traceroute sequence, I have to install **locate**, **squid** and **traceroute**.
 
-sudo apt get mlocate
+*sudo apt get mlocate
 sudo apt get squid
-sudo apt get traceroute
+sudo apt get traceroute*
 
-locate traceroute
+**locate traceroute**
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/locate%20traceroute.png">
 
-locate squid
+**locate squid**
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/locate%20traceroute.png">
 
-Section Information
+**8) Partitions Information**
 
-lsblk
+**lsblk** command
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/partitions.png">
 
-sda - hard disk partitions
-sr0 - cdrom
+**sda** - hard disk partitions
+**sr0** - cdrom
 
-Count the number of lines containing a given sequence of characters in a given file.
+**9)** Count the number of lines containing a given sequence of characters in a given file.  
 
-grep -c "bash" .profile
+*grep -c "bash" .profile* command  
 
+10) Using **find** command in the **/etc** folder, I searched for files with the word **host** in their names
 
+*find /etc -name "*host*"* command    
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/find%20result.png">
 
-Using the find command in the / etc folder, I searched for files with the word host in their names
+**11)** List all objects in **/etc** that contain the ss character sequence.
 
-find / etc -name "* host *"
-
-List all objects in / etc that contain the ss character sequence.
-find / etc -name "* ss *"
+*find /etc -name "*ss*"* command
 
 I can duplicate a similar command using a bunch of grep like this
 
-grep -r "ss" / etc
+*grep -r "ss" /etc* command
 
-Print of the contents of the / etc directory
+**12)** Print of the contents of the **/etc** directory
 
-tree / etc> tree_etc.txt
+*tree /etc> tree_etc.txt* command
+
+**13) The types of devices**
 
 Character (byte-oriented) devices read and write data as a stream of bytes. These include serial and parallel ports, tape drives, terminals, and sound cards.
-
 Block (block-oriented) devices read and write data in blocks of a fixed size. Block devices provide random access to their data. An example is a hard drive.
 
 The device type can be determined using commands
 
-ls / dev /
+**ls / dev /
 lsblk
-fdisk -l
+fdisk -l**
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/type%20of%20devices.png">
+
+**14)** How to determine the type of file in the system
 
 You can determine the file type using the command
 
-file <file name>
+*file <file name>*  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/type%20of%20file.png">   
 
 File types: text, executable, images, archives, libraries, block, symbolic, symbolic and hard links, tunnels, socket files, etc.
 
-List the first 5 directory files that were recently accessed in the / etcdirectory.
+**15)** List the first 5 directory files that were recently accessed in the **/etc** directory.
 
-find / etc -ctime +1 | head -n 10
+*find /etc -ctime +1 | head -n 10* command
