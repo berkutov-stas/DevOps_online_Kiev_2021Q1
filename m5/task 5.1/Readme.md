@@ -17,7 +17,7 @@ I installed the **members** command and looked at the users in the adm group.
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/finger.png">
 
 Changed user information
-*chfn stas*
+*chfn stas*  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/chfn.png">
 
 5) The **man** command acts as a reference for Linux commands. To call help about a command, you need to write - **man <command>**.
@@ -30,16 +30,17 @@ The **-K** option allows you to search the manual pages themselves.
 
 The **info** command is an alternative to the man command. But in this case, when displaying information, you can use the given hyperlinks.  
    The **-f** option to the info command gives more concise information on request.  
-   the **-a** option finds all files matching the reference manual.
+   the **-a** option finds all files matching the reference manual.  
    <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/info-a-info.png">
 
 6) The **more** command is designed to view files page by page. If the file content is too large to fit on one screen, it displays the content page by page. 
-But the text can only be scrolled forward. You can also redirect the output of other commands to the more command.
-I open a .bash file using the command more
+But the text can only be scrolled forward. You can also redirect the output of other commands to the more command.  
+
+I open a .bash file using the command more  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/more%20open%20fail.png">
 
 The **less** command performs a similar function, but allows text to scroll in both directions. Also from the command can search in both directions, open the file in the editor.  
-I open a .bash file using the command less.
+I open a .bash file using the command less.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/less%20open%20file.png">
 
 7) **finger** command lists for each user on the system at the moment: login name, full name, terminal name, idle time, registration time, job location, and phone number.
@@ -49,13 +50,13 @@ I created a .plan file in my home directory and wrote information to it. With **
 
 8) **ls** command displays the contents of the current directory.
 
-**ls** without parameters lists only folders.
+**ls** without parameters lists only folders.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/ls%20command.png">
 
 **ls** with the **-a** option lists folders and files
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/ls-a.png">
 
-**ls** with the **-u** option prints without sorting.
+**ls** with the **-u** option prints without sorting.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/ls-u.png">
 
 **Task1.Part2**
@@ -65,13 +66,11 @@ I created a .plan file in my home directory and wrote information to it. With **
 
 The tree command displays files and folders with a "c" in their names.
 
-*tree -f - P '* c' --prune*
-
-Output result.  
+*tree -f - P '*c' --prune* command    
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/tree-f-p%20result.png">
 
 List subdirectories of the root directory up to and including the second nesting level.
-*tree -L 2*
+*tree -L 2* command
 
 2) You can determine the type of file using the command **file**
 
@@ -86,13 +85,13 @@ Go to root directory
 *cd /*
 
 Going an absolute path
-*cd /home/stas/Videos*
+*cd /home/stas/Videos*  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/absolutive%20patch.png">
 
-Jump along a relative path
-*cd / home
-cd stas
-cd Videos*
+Jump along a relative path  
+*cd /home  
+cd stas  
+cd Videos*  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/relative%20patch.png">
 
 4) **ls** command displays the contents of the current directory.
@@ -102,71 +101,71 @@ cd Videos*
 **ls** with the **-l** option displays a verbose listing showing owner, group, creation date, size, and other options.
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/ls-l.png">
 
-5) I created a test folder
-*mkdir test*
-I created a file "test" in the test folder
+5) I created a test folder  
+*mkdir test* command  
+I created a file "test" in the test folder  
 *touch /home/stas/test/test.txt*
 
-passed information about the folder structure to the file - **test.txt**
-*tree -o /home/stas/test/test.txt*
+passed information about the folder structure to the file - **test.txt**  
+*tree -o /home/stas/test/test.txt*  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/test-O-result.png">
 
-I copied the created file to home directory
-*cp /home/stas/test/test.txt /home/stas/test.txt*
+I copied the created file to home directory  
+*cp /home/stas/test/test.txt /home/stas/test.txt*  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/copy%20file.png">
 
-I deleted file and directory
+I deleted file and directory  
 *rm -R /home/stas/test*
 
-I deleted the file copied to home directory
+I deleted the file copied to home directory  
 *rm /home/stas/test.txt*
 
-6) I created a test folder
+6) I created a test folder  
 *mkdir test*
 
-copying .bash_history file with name change
+copying .bash_history file with name change  
 *cp /home/stas/.bash_history /home/stas/test/labwork2*
 
 **Symbolic links** can be compared to shortcuts. They contain the address of the desired file. When you open a link, the desired file or folder opens. When you delete a file, the link will be saved, but it will lead to nowhere. A **hard link** is another name for a file. Creating a hard link creates an additional pointer to the existing file, but not a copy of it.
 
-Creating a symbolic link
+Creating a symbolic link  
 *ln -s labwork2 softlink*
 
-Create a hard link
+Create a hard link  
 *ln labwork2 hardlink*
 
-Renaming hard and symbolic links
+Renaming hard and symbolic links  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/rename%20hard%20and%20soft%20links.png">
 
 After deleting **labwork2** file, the symlink stopped working as it was essentially a shortcut. The hard link still works because it continues to point to the correct location on the disk where the data is stored.
 
 7) In order to use the locate utility to find all files containing the squid and traceroute sequence, I have to install **locate**, **squid** and **traceroute**.
 
-*sudo apt get mlocate
-sudo apt get squid
+*sudo apt get mlocate  
+sudo apt get squid  
 sudo apt get traceroute*
 
-**locate traceroute**
+**locate traceroute**  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/locate%20traceroute.png">
 
-**locate squid**
+**locate squid**  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/locate%20traceroute.png">
 
 **8) Partitions Information**
 
-**lsblk** command
+**lsblk** command  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/partitions.png">
 
-**sda** - hard disk partitions
+**sda** - hard disk partitions  
 **sr0** - cdrom
 
 **9)** Count the number of lines containing a given sequence of characters in a given file.  
 
-*grep -c "bash" .profile* command  
+*grep -c "bash" .profile* command
 
 10) Using **find** command in the **/etc** folder, I searched for files with the word **host** in their names
 
-*find /etc -name "*host*"* command    
+*find /etc -name "*host*"* command   
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/find%20result.png">
 
 **11)** List all objects in **/etc** that contain the ss character sequence.
@@ -188,9 +187,9 @@ Block (block-oriented) devices read and write data in blocks of a fixed size. Bl
 
 The device type can be determined using commands
 
-**ls / dev /
-lsblk
-fdisk -l**
+**ls /dev/  
+lsblk  
+fdisk -l**  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/type%20of%20devices.png">
 
 **14)** How to determine the type of file in the system
