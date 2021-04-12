@@ -24,7 +24,7 @@ Changed user information
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/man%20sudo.png">
 
 The **-f** option to the man command displays a short description of the man page.
-https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/man-f-man.png
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/man-f-man.png">
 
 The **-K** option allows you to search the manual pages themselves.
 
@@ -66,25 +66,25 @@ I created a .plan file in my home directory and wrote information to it. With **
 
 The tree command displays files and folders with a "c" in their names.
 
-*tree -f - P '*c' --prune* command    
+**tree -f - P '*c' --prune** command    
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/tree-f-p%20result.png">
 
-List subdirectories of the root directory up to and including the second nesting level.
+List subdirectories of the root directory up to and including the second nesting level.  
 *tree -L 2* command
 
 2) You can determine the type of file using the command **file**
 
-*File <path to file>*  
+*File {path to file}* 
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/file%20command%20-%20example.png">
 
-3) Go to home directory
+3) Go to home directory  
 **cd ~** or just **cd**
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/cd.png">
 
-Go to root directory
+Go to root directory  
 *cd /*
 
-Going an absolute path
+Going an absolute path  
 *cd /home/stas/Videos*  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/absolutive%20patch.png">
 
@@ -102,7 +102,8 @@ cd Videos*
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/ls-l.png">
 
 5) I created a test folder  
-*mkdir test* command  
+*mkdir test* command
+
 I created a file "test" in the test folder  
 *touch /home/stas/test/test.txt*
 
@@ -196,7 +197,7 @@ fdisk -l**
 
 You can determine the file type using the command
 
-*file <file name>*  
+*file {file name}*  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.1/type%20of%20file.png">   
 
 File types: text, executable, images, archives, libraries, block, symbolic, symbolic and hard links, tunnels, socket files, etc.
