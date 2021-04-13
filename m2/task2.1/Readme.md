@@ -34,6 +34,8 @@ Installed the AWS CLI software, created a user in AWS IAM and uploaded the file 
 
 Created a static IP address. Learned how to do domain name, but didn't do it for fear of getting a large invoice from Amazon.
 
-Created Containers with Custom settings.
+Created Containers with Custom settings.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m2/task2.1/cluster_created.png">
 
-Figured out how to create a website on Amazon S3,
+
+Learned how to create a website on Amazon S3, but didn't do it for fear of getting a large invoice from Amazon.
