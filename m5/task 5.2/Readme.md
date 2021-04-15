@@ -14,7 +14,7 @@ user's group and its membership in the group or groups in file **/etc/group**.
 To add a user to the system, use the **useradd username** command. Only root or users with sudo privileges can use this command.
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.2/useradd.png">
 
-The user can then set a password using the **passwd username** command.
+The user can then set a password using the **passwd username** command.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.2/passwd%20user.png">
 
 If you use the command **useradd -m username**, the home directory will appear in the **/home** user directory.
@@ -40,7 +40,7 @@ To unblock a user using the passwd command, you need to write
 You can remove the user's password with the **passwd username** command. After that the user can change the password.
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.2/change%20passwd.png">
 
-Display the extended format of information about the directory - **ls -l command**. Allows you to see the set of rights set for a user in a specific directory.
+Display the extended format of information about the directory - **ls -l command**. Allows you to see the set of rights set for a user in a specific directory.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.2/ls%20-l.png">
 
 Each file has three access parameters: **read, write, execute**. Moreover, each the file has three categories of users, for which you can set different combinations of access
@@ -56,10 +56,10 @@ There are also special file permissions, which allows ordinary users perform act
 
 To change the owner of a folder, use the **chown** command.
 
-The user test has created a folder called training. Changed the owner of the folder to stas with the command - **sudo chown stas /home/test/training**
+The user test has created a folder called training. Changed the owner of the folder to stas with the command - **sudo chown stas /home/test/training**  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.2/chown%20folder.png">
 
-Also I changed the group of the folder owner - **sudo chown stas:stas /home/test/training**
+Also I changed the group of the folder owner - **sudo chown stas:stas /home/test/training**  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.2/chown%20fold%20group.png">
 
 Octal representation of access rights is necessary for more convenient administration representation of access rights.
@@ -86,7 +86,8 @@ Full access mode for folder access is 0777, for file - 0666. Accordingly, to det
 0777 - 0022 = 0755, etc.
 
 You can display the mask value in symbolic notation using the -S option:
-**umask -S**<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.2/umask%20-s.png">
+**umask -S**  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.2/umask%20-s.png">
 
 To set a new value, you need to change or add a line at the beginning of the file **/etc/profile**. For example umask 027.
 
