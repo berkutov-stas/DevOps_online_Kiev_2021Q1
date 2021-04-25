@@ -90,7 +90,7 @@ Installed **OpenSSH** on a Windows PC. To do this, I had to add the path to the 
 Generated an RSA key with the **ssh-keygen** command. After that, I copied the key to the Linux machine with the **scp** command.
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/copy-key-to-ubuntu.png">
 
-Uploaded the key to **authorized-keys** file on Linux.
+Uploaded the key to **authorized-keys** file on Linux.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/copy-key-to-ubuntu.png">
 
 Checked the work of ssh connection via cmd and Powershell.
@@ -106,13 +106,13 @@ idle timeout **ClientAliveInterval** parameter
 Generated a key of type DSA with the command **ssh-keygen -t dsa**  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20dsa%20%D0%BA%D0%BB%D1%8E%D1%87%D0%B0.png">
 
-Connected to the remote machine using the dsa key
+Connected to the remote machine using the dsa key  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/dsa_connect_ubuntu.png">
 
 Generated a key of type ECDSA with the command **ssh-keygen -t ecdsa**
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/%D0%B3%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20ecdsa%20%D0%BA%D0%BB%D1%8E%D1%87%D0%B0.png">
 
-Connected to remote machine using ecdsa key
+Connected to remote machine using ecdsa key  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/ecd_connect_ubuntu.png">
 
 Port forwarding for the SSH client from the host machine I made in VirtualBox settings.
