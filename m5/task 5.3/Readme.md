@@ -117,10 +117,29 @@ Connected to remote machine using ecdsa key
 
 Port forwarding for the SSH client from the host machine I made in VirtualBox settings.
 
+Launched tcpdump on port 22.
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/tcpdump%20ssh%20start.png">
 
+I noticed the sending of packets from the connected PC with the address 192.168.1.2
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/tcpdump%20ssh%20command%20ip%20a.png">
 
-Initially, Wireshark did not show my network interface. To solve this problem I
+Capture telnet by tcpdump
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/telnet%20tcpdump%20%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%B2%D0%B0%D1%82%D1%8B%D0%B2%D0%B0%D1%8E%D1%82%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8.png">
 
-used sudo dpkg-reconfigure wireshark-common command and added my user to
+Do the same with rlogin  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/rlogin%20tcpdump.png">
 
-Wireshark sudo adduser stas wireshark.
+Initially, Wireshark did not show my network interface. To solve this problem I used **sudo dpkg-reconfigure wireshark-common** command and added my user to Wireshark
+**sudo adduser stas wireshark**.
+
+Capture SSH-connection by Wireshark
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/wsk%20ssh%20connect%20catch.png">
+
+I see the connected PC using the command **ping**
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/wsk%20ssh%20ping%20catch.png">
+
+Capture Telnet-connection by Wireshark
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/wsk%20telnet%20catch.png">
+
+Capture Rlogin-connection by Wireshark
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/wsk%20rlogin.png">
