@@ -117,13 +117,13 @@ Connected to remote machine using ecdsa key
 
 Port forwarding for the SSH client from the host machine I made in VirtualBox settings.
 
-Launched tcpdump on port 22.
+Launched tcpdump on port 22.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/tcpdump%20ssh%20start.png">
 
 I noticed the sending of packets from the connected PC with the address 192.168.1.2
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/tcpdump%20ssh%20command%20ip%20a.png">
 
-Capture telnet by tcpdump
+Capture telnet by tcpdump  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/telnet%20tcpdump%20%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%B2%D0%B0%D1%82%D1%8B%D0%B2%D0%B0%D1%8E%D1%82%20%D0%BA%D0%BB%D0%B0%D0%B2%D0%B8%D1%88%D0%B8.png">
 
 Do the same with rlogin  
