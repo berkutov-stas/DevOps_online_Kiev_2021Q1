@@ -115,6 +115,10 @@ Generated a key of type ECDSA with the command **ssh-keygen -t ecdsa**
 Connected to remote machine using ecdsa key
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m5/task%205.3/ecd_connect_ubuntu.png">
 
+Port forwarding for the SSH client from the host machine I made in VirtualBox settings.
+
+
+
 Initially, Wireshark did not show my network interface. To solve this problem I
 
 used sudo dpkg-reconfigure wireshark-common command and added my user to
