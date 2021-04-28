@@ -24,10 +24,10 @@ Using the **nslookup** command, I determined that 8.8.8.8 belongs to DNS.google.
 Determined the ip-address of the epam.com site using the nslookup command.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m6/task%206.1/epam%20ip%20addr.png">
 
-**VM1 routing table**
+**VM1 routing table**  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m6/task%206.1/vm1%20route.png">
 
-**VM2 routing table**
+**VM2 routing table**  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m6/task%206.1/vm2%20route.png">
 
 Defined the default gateway using command **ip route | grep default**    
