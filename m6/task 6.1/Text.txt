@@ -1,0 +1,27 @@
+Я создал два ПК на VirtualBox. На первом из них два сетевых интерфейса, на втором - один. Сетевые интерфейсы я настраивал через netplan, отредактировав .yaml-файл.
+
+Сетевые интерфейсы VM1
+
+Сетевые интерфейсы VM2
+
+V1 и V2 видят друг друга в сети.
+
+Я настроил доступ в интернет для VM2 с помощью iptables, использовав команды:
+
+iptables -A FORWARD -i enp0s8 -o enp0s3 -s 192.168.2.0/24 -j ACCEPT 
+iptables -A FORWARD -i enp0s3 -o enp0s8 -d 192.168.2.0/24 -j ACCEPT
+iptables -t nat -A POSTROUTING -s 192.168.2.0/24 -o enp0s3 -j SNAT --to-source 192.168.2.25
+
+VM2 теперь имеет доступ в интернет.
+
+С помощью команды nslookup определил принадлежность адреса 8.8.8.8 к DNS.google.
+
+Определил ip-адрес сайта epam.com с помощью команды nslookup.
+
+VM1 routing table
+
+VM2 routing table
+
+Определил default gateway с помощью команды ip route | grep default 
+
+Сделал Traceroute до google.com командой mtr.
