@@ -35,12 +35,30 @@ User *Mike* is allowed to make a selection in the database.
 The user *Editor* has been given all rights to the database.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/grant.png">
 
-Made a complex selection from the database.  
-<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%20%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%88%D0%B0%D1%85%D1%82%D0%B5%D1%80%D0%B0.png">
-
 Made a backup of the database.
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/mysql%20%D0%B1%D1%8D%D0%BA%D0%B0%D0%BF.png">
 
 Using the **DROP** operator. Deleted the coahes table.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%20%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B0.png">
 
+The database was restored from a backup.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B01.png">
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B2%D0%BE%D1%81%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B02.png">
+
+**Transfer** my local database to RDS AWS.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/connect%20to%20rds.png">
+
+Working with the base, which is located on the RDS, through the console.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%20%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D1%88%D0%B0%D1%85%D1%82%D0%B5%D1%80%D0%B0.png">
+
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/select%20where%20group%20order%20RDS.png">
+
+Create the dump of my database which is located on the RDS.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/dump%20db%20from%20rds.png">
+
+An Amazon DynamoDB table created.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/dynamo%20DB%20table%20created.png">
+
+Using Query and Scan in my database on an Amazon DynamoDB.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/dynamo%20DB%20scan.png">
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m3/task%203.1/dynamo%20DB%20query.png">
