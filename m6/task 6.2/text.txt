@@ -1,0 +1,7 @@
+I have installed and configured DHCP and DNS server on VM1. I used DNSMASQ.
+
+Dnsmasq.conf settings look like this
+
+VM1 received an address 192.168.2.60
+
+VM2 received an address 192.168.2.96
