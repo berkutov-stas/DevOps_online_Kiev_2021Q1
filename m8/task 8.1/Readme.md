@@ -57,4 +57,4 @@ Jenkins CLI
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m8/task%208.1/jenkins%20cli.png">
 
 Jenkins Pipeline  
-<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m8/task%208.1/pipeline%20stage%20view.png>
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m8/task%208.1/pipeline%20stage%20view.png">
