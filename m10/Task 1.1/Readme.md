@@ -30,6 +30,16 @@ This Ansible playbook code
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m10/Task%201.1/apache%20install%20yml.png"> 
 
 Next playbook was Copy index.html and restart Webserver.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m10/Task%201.1/copying%20html.png"> 
+
+After copying and restarting, the site runs on 4 remote PCs.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m10/Task%201.1/ansible%204%20sites%20running.png"> 
 
+This Ansible playbook code.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m10/Task%201.1/html%20copy%20yml.png"> 
 
+Ansible playbook using loop.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m10/Task%201.1/playbook_loop.png"> 
+
+Ansible playbook using template and jinja.  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m10/Task%201.1/ansible%20template.png"> 
