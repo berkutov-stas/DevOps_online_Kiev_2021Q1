@@ -49,3 +49,12 @@ My github webhook.
 
 My index.html.  
 <img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m8/task%208.1/github%20index%20file.png">
+
+My job on Node1  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m8/task%208.1/node1%20build%20success2.png">
+
+Jenkins CLI  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m8/task%208.1/jenkins%20cli.png">
+
+Jenkins Pipeline  
+<img src="https://github.com/berkutov-stas/DevOps_online_Kiev_2021Q1/blob/main/m8/task%208.1/pipeline%20stage%20view.png">
