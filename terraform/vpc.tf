@@ -130,13 +130,13 @@ resource "local_file" "key_key" {
     filename = "key_key"
 }
 
-resource "aws_instance" "WebServer_New" {
+resource "aws_instance" "DBServer" {
   ami                    = "ami-0f540e9f488cfa27d"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.ssh.id]
   key_name = "TF_key"
   tags = {
-    Name = "NewWebServer"
+    Name = "DBServer"
 
   }
   subnet_id = aws_subnet.PrivateSubnet.id
@@ -144,13 +144,13 @@ resource "aws_instance" "WebServer_New" {
 }
 
 
-resource "aws_instance" "New_WebServer_New" {
+resource "aws_instance" "WebServer" {
   ami                    = "ami-0f540e9f488cfa27d"
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.ssh.id]
   key_name = "TF_key"
   tags = {
-    Name = "New_NewWebServer"
+    Name = "WebServer"
 
   }
   subnet_id = aws_subnet.PublicSubnet.id
